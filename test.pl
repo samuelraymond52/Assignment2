@@ -8,3 +8,4 @@ sum-up-numbers-simple([A|Z],N) :-
 
 
 sum-up-numbers-general([],0). /* If the list is empty return 0*/
+sum-up-numbers-general([[]],0). /*if the lst inside the list is empty return 0*/
