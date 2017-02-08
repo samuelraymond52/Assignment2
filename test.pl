@@ -20,3 +20,7 @@ sum-up-numbers-general([A|Z],N) :-
 sum-up-numbers-general(Z,Summ),
 N is A + Summ. /* check in the atom if it is a list and add the value recurslivly if it is a number*/
 
+common-unique-elements([],_,[])
+
+
+
