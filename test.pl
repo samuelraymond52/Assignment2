@@ -13,4 +13,8 @@ sum-up-numbers-general([A|Z],N) :-
 number(A), 
 sum-up-numbers-general(Z,Summ),
 N is A + Summ. /*if the atom is a number recursivly add the number in the list*/
-
+sum-up-numbers-general([A|Z],N) :-
+atom(A),
+sum-up-numbers-general(Z ,N). /* If the element is an atom continue through the list*/
+sum-up-numbers-general([Head|Tail],N) :-
+sum-up-numbers-general(Z,summ
