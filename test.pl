@@ -17,4 +17,6 @@ sum-up-numbers-general([A|Z],N) :-
 atom(A),
 sum-up-numbers-general(Z ,N). /* If the element is an atom continue through the list*/
 sum-up-numbers-general([Head|Tail],N) :-
-sum-up-numbers-general(Z,summ
+sum-up-numbers-general(Z,Summ),
+N is Head + Summ. /* check in the atom if it is a list and add the value recurslivly if it is a number*/
+
